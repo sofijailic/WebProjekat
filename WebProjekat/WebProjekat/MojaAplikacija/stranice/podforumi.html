@@ -1,3 +1,2 @@
-﻿<h1>Dobrodosli na stranicu podforuma, vidimo da niste ulogovani, mozete da pregledate sadrzaj ali ne i da komentarisete...</h1>
-<a href="#!/logovanje">Ulogujte se</a><br />
-<a href="#!/registracija">Registrujte se</a>
+﻿<h1 ng-show="!ulogovan">Dobrodosli na stranicu podforuma, vidimo da niste ulogovani, mozete da pregledate sadrzaj ali ne i da komentarisete...</h1>
+<h1 ng-show="ulogovan">Dobrodosli {{korisnik.korisnickoIme}}</h1>
