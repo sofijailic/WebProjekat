@@ -16,8 +16,12 @@
         } else {
             alert('Molim vas potvrdite istu lozinku');
         }
+    }
 
-        
+    $scope.uloguj = function (korisnik) {
+        autentifikacijaFabrika.Uloguj(korisnik).then(function (odgovor) {
+            console.log(odgovor.data);
+        });
     }
 
 });

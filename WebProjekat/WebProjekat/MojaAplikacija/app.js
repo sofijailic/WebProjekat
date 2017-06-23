@@ -12,7 +12,9 @@ forum.config(function ($routeProvider) { // konfiguracija potrebnih stvari koje 
 
     }).when('/logovanje',
     {
+        controller: 'AutentifikacijaController',
         templateUrl: 'MojaAplikacija/stranice/logovanje.html'
+
     }).when('/registracija',
     {
         controller: 'AutentifikacijaController',

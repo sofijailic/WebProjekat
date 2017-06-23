@@ -201,6 +201,7 @@
     <Content Include="MojaAplikacija\app.js" />
     <Content Include="MojaAplikacija\fabrike\autentifikacijaFabrika.js" />
     <Content Include="MojaAplikacija\kontroleri\AutentifikacijaController.js" />
+    <Content Include="MojaAplikacija\kontroleri\GlavniController.js" />
     <Content Include="MojaAplikacija\kontroleri\PodforumiController.js" />
     <Content Include="MojaAplikacija\stranice\logovanje.html" />
     <Content Include="MojaAplikacija\stranice\podforumi.html" />
