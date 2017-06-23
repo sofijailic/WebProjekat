@@ -151,7 +151,6 @@
   <ItemGroup>
     <Folder Include="Models\" />
     <Folder Include="MojaAplikacija\fabrike\" />
-    <Folder Include="MojaAplikacija\kontroleri\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -201,8 +200,11 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="MojaAplikacija\app.js" />
+    <Content Include="MojaAplikacija\kontroleri\AutentifikacijaController.js" />
+    <Content Include="MojaAplikacija\kontroleri\PodforumiController.js" />
     <Content Include="MojaAplikacija\stranice\logovanje.html" />
     <Content Include="MojaAplikacija\stranice\podforumi.html" />
+    <Content Include="MojaAplikacija\stranice\registracija.html" />
     <Content Include="Scripts\js\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\js\ai.0.22.9-build00167.min.js" />
     <Content Include="Scripts\js\angular-route.min.js" />
