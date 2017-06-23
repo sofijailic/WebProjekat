@@ -1,2 +1,45 @@
 ﻿<h1>Registracija</h1>
 
+<table border="0">
+    <tr>
+        <td>KorisnickoIme :</td>
+        <td><input ng-model="korisnik.korisnickoIme" type="text"></td>
+    </tr>
+      
+    <tr>
+        <td>Lozinka:</td> 
+        <td> <input ng-model="korisnik.lozinka" type="password">   </td>
+    </tr>
+
+    <tr>
+        <td>Potvrda lozinke:</td>
+        <td> <input ng-model="korisnik.potvrdaLozinke" type="password">   </td>
+    </tr>
+    <tr>
+        <td> Ime:</td>
+        <td> <input ng-model="korisnik.ime" type="text">        </td>
+    </tr>   
+     
+    <tr>
+        <td> Prezime:</td>
+        <td> <input ng-model="korisnik.prezime" type="text">       </td>
+    </tr>    
+
+    <tr>
+        <td> Broj Telefona:</td>
+        <td> <input ng-model="korisnik.brojTelefona" type="text">       </td>
+    </tr> 
+    <tr>
+        <td> Email:</td>
+        <td> <input ng-model="korisnik.email" type="email">               </td>
+    </tr> 
+
+    <tr>
+        <td colspan="2">
+            <button ng-click="registruj(korisnik)">Registruj se</button>
+
+        </td>
+    </tr>
+
+
+</table>
