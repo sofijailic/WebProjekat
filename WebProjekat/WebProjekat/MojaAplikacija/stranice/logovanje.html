@@ -1,4 +1,19 @@
 ﻿<h1>Logovanje</h1>
-<input ng-model="korisnik.korisnickoIme"/>
-<input ng-model="korisnik.lozinka"/>
-<button ng-click="uloguj(korisnik)">Uloguj se</button>
+<form method="post">
+    <table border="0">
+        <tr>
+            <td>Korisnicko ime :</td>
+            <td><input  ng-model="korisnik.korisnickoIme" /> </td>
+        </tr>
+        <tr>
+            <td>Lozinka:</td>
+            <td><input ng-model="korisnik.lozinka" /></td>
+        </tr>
+        <tr>
+            <td><button ng-click="uloguj(korisnik)">Uloguj se</button></td>
+        </tr>
+    </table>
+ 
+
+    
+</form>

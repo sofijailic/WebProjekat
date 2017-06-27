@@ -8,7 +8,7 @@ forum.config(function ($routeProvider) { // konfiguracija potrebnih stvari koje 
 	}).when('/podforumi',
     {
         controller: 'PodforumiController',
-        templateUrl: 'MojaAplikacija/stranice/podforumi.html'
+        templateUrl: 'MojaAplikacija/stranice/podforumi/podforumi.html'
 
     }).when('/logovanje',
     {

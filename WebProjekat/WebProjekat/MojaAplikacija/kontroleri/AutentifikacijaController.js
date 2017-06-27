@@ -1,17 +1,17 @@
 ﻿forum.controller('AutentifikacijaController', function ($scope, autentifikacijaFabrika,$window,$rootScope) {
     
     if ($rootScope.ulogovan == true) { // ako je korisnik ulogovan, nemoj mu dozvoliti da ide na stranicu za registrovanje ili logovanje
-        $window.location.href = "#!/podforumi";
+        $window.location.href = "#!/podforumi"; //ako je ulogovan daj mu stranicu podforumi
     }
 
-    $scope.registruj = function (korisnik) {
+    $scope.registruj = function (korisnik) {   //funkcija registruj, uzima korisnika  (parametri bez tipa se pisu)
 
         if (korisnik.lozinka == korisnik.potvrdaLozinke) {
-            autentifikacijaFabrika.Registracija(korisnik).then(function (odgovor) {
+            autentifikacijaFabrika.Registracija(korisnik).then(function (odgovor) { //kad dobijem odgovor
 
                 if (odgovor.data == true) {
 
-                    $window.location.href="#!logovanje";
+                    $window.location.href="#!logovanje"; //ukoliko je uspesna registracija predji na stranicu logovanje
                 } else {
                     alert('Korisnik sa ovim korisnickim imenom vec postoji');
                 }
@@ -36,6 +36,7 @@
                     korisnickoIme: odgovor.data.KorisnickoIme,
                     uloga: odgovor.data.Uloga
                 };
+                console.log(odgovor.data);
                 $window.location.href = "#!/podforumi";
             }
         });

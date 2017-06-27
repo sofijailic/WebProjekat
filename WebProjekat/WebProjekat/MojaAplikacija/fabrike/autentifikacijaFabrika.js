@@ -5,7 +5,7 @@
 
     factory.Registracija = function (korisnik) {
         return $http.post('/api/Autentifikacija/RegistrujKorisnika', {
-            KorisnickoIme: korisnik.korisnickoIme,
+            KorisnickoIme: korisnik.korisnickoIme, //ova imena isto kao i kod  klase Korisnik! vodi racuna
             Lozinka: korisnik.lozinka,
             Ime: korisnik.ime,
             Prezime: korisnik.prezime,
