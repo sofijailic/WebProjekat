@@ -9,7 +9,7 @@
         $rootScope.ulogovan = true; // kazemo da je ulogovan
         $rootScope.korisnik = { // stavljamo korisnika na rootScope
             korisnickoIme: sessionStorage.getItem("korisnickoIme"),
-            uloga: sessionStorage.getItem("uloga"),
+            uloga: sessionStorage.getItem("uloga")
         };
     } else { // ako je cookie prazan stavljamo da korisnik nije ulogovan
         $rootScope.ulogovan = false;

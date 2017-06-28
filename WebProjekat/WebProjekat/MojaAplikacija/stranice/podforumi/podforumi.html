@@ -1,3 +1,18 @@
 ﻿<h1 ng-show="!ulogovan">Dobrodosli na stranicu podforuma, vidimo da niste ulogovani, mozete da pregledate sadrzaj ali ne i da komentarisete...</h1>
 <h1 ng-show="ulogovan">Dobrodosli {{korisnik.korisnickoIme}}</h1>
 
+<button ng-click="otvoriStranicuDodavanjePodforuma()" ng-show="korisnik.uloga=='administrator' || korisnik.uloga == 'moderator'" class="dugme">Dodaj podforum</button>
+<br>
+<br>
+<br>
+<fieldset ng-repeat="podforum in podforumi" class="kartica">
+    <legend class="naslov" ><a href="#!/podforumi/{{podforum.Naziv}}">{{podforum.Naziv}}</a></legend>
+
+    Naziv: {{podforum.Naziv}} <br>
+    Opis: {{podforum.Opis}}<br>
+    Ikonica: {{podforum.Ikonica}}<br>
+    Spisak pravila: {{podforum.SpisakPravila}}<br>
+    Moderator: {{podforum.Moderator}}<br>
+
+</fieldset>
+

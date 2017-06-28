@@ -3,5 +3,5 @@
 }
 
 .navbar-default {
-    background: #000;
+    background: linear-gradient(270deg, rgb(76, 255, 0) 2%, rgb(255, 216, 0) 99%);
 }

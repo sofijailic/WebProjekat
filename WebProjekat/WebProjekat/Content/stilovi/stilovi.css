@@ -1,0 +1,68 @@
+﻿body {
+    background: #222;
+    color: #fff;
+}
+
+.kartica {
+    width: 40%;
+background-color: lightgreen;
+color: black;
+border: 4px solid green;
+padding: 10px;
+margin-bottom: 30px;
+margin-left: 50px;
+ background: linear-gradient(270deg, rgb(76, 255, 0) 7%, rgb(255, 216, 0) 99%);
+ font-weight: bold;
+}
+
+.naslov {
+    width:40%;
+   border-style: inset;
+    border: 5px solid green;
+}
+
+.naslov > a {
+    color: red;
+}
+
+.dugme {
+    display: inline-block;
+    background: rgb(76, 255, 0);
+    border: 2px solid green;
+    border-radius: 7px;
+    box-shadow: unset;
+    
+}
+
+.tabela {
+    border: 1px solid white;
+    width: 10%;
+    color: darkgreen;
+    margin-left:50px;
+    padding:50px;
+    height:30px;
+    border-radius:10px;
+    background: linear-gradient(to top, #ff33cc 0%, #66ff99 99%);
+    width:500px;
+    height:50px;
+ 
+}
+
+.oboj {
+    background-color: #b6ff00;
+}
+.levo{
+    float:left;
+    margin-left: 50px;
+}
+.teme{
+    width: 500px;
+    min-height: 200px;
+    max-height:auto;
+    background: #fff;
+    padding:30px;
+}
+.dugmeZaDodavanje{
+    margin-left:100px;
+    margin-bottom:50px;
+}

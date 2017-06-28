@@ -199,6 +199,7 @@
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\stilovi\bootstrap.min.css" />
     <Content Include="Content\stilovi\glavniStil.css" />
+    <Content Include="Content\stilovi\stilovi.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="MojaAplikacija\app.js" />
@@ -207,8 +208,11 @@
     <Content Include="MojaAplikacija\kontroleri\AutentifikacijaController.js" />
     <Content Include="MojaAplikacija\kontroleri\GlavniController.js" />
     <Content Include="MojaAplikacija\kontroleri\PodforumiController.js" />
+    <Content Include="MojaAplikacija\kontroleri\UnutarPodforumaController.js" />
     <Content Include="MojaAplikacija\stranice\logovanje.html" />
+    <Content Include="MojaAplikacija\stranice\podforumi\dodajPodforum.html" />
     <Content Include="MojaAplikacija\stranice\podforumi\podforumi.html" />
+    <Content Include="MojaAplikacija\stranice\podforumi\pregledPodforuma.html" />
     <Content Include="MojaAplikacija\stranice\registracija.html" />
     <Content Include="Scripts\js\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\js\ai.0.22.9-build00167.min.js" />

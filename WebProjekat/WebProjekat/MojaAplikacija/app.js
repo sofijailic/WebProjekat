@@ -19,6 +19,17 @@ forum.config(function ($routeProvider) { // konfiguracija potrebnih stvari koje 
     {
         controller: 'AutentifikacijaController',
         templateUrl: 'MojaAplikacija/stranice/registracija.html'
+
+    }).when('/dodajPodforum', {
+        
+        controller: 'PodforumiController',
+        templateUrl: 'MojaAplikacija/stranice/podforumi/dodajPodforum.html'
+
+    }).when('/podforumi/:nazivPodforuma', {
+
+        controller: 'UnutarPodforumaController',
+        templateUrl: 'MojaAplikacija/stranice/podforumi/pregledPodforuma.html'
+
     })
 
 });

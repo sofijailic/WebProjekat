@@ -1,1 +1,1 @@
-﻿ognjen;123;korisnik;ognjen;gatalo;1243124;ognjen@onejend.com;28-Jun-17
+﻿ognjen;123;administrator;ognjen;gatalo;1243124;ognjen@onejend.com;28-Jun-17

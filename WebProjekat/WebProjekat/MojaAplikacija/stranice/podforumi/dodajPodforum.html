@@ -1,0 +1,44 @@
+﻿<h4>Dodavanje podforuma</h4>
+
+<table border="0" >
+    <tr>
+        <td >
+            Naziv :
+        </td>
+        <td >
+            <input ng-model="podforum.naziv" type="text" > 
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Opis :
+        </td>
+        <td>
+            <input ng-model="podforum.opis" type="text" >
+        </td>
+
+    </tr>
+    <tr>
+        <td>
+            Ikonica :
+        </td>
+        <td>
+            <input id="slikaPodforuma" type="file">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            SpisakPravila :
+        </td>
+        <td>
+            <input ng-model="podforum.pravila" type="text" >
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <button ng-click="dodajPodforum(podforum)">Dodaj podforum</button>
+        </td>
+    </tr>
+</table>
+ 
+  

@@ -9,10 +9,16 @@
             Opis: podforum.opis,
             Ikonica: podforum.ikonica,
             SpisakPravila: podforum.pravila,
-            Moderator: podforum.moderator,
-            Moderatori: podforum.moderatori
-
+            Moderator: podforum.moderator
         });
+    }
+
+    factory.UzmiSvePodforume = function () {
+        return $http.get('/api/Podforumi/UzmiSvePodforume');
+    }
+
+    factory.uzmiPodforumPoNazivu = function (nazivPodforuma) {
+        return $http.get('/api/Podforumi/UzmiPodforumPoNazivu?naziv=' + nazivPodforuma);
     }
 
     return factory;
