@@ -10,7 +10,7 @@
             Naslov: tema.naslov,
             Tip: tema.tip,
             Autor: tema.autor,
-            Sadrzaj: tema.sadrzajTeme,
+            Sadrzaj: tema.sadrzaj,
             PozitivniGlasovi: 0,
             NegativniGlasovi: 0
         });
