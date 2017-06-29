@@ -1,4 +1,4 @@
-﻿forum.controller('UnutarPodforumaController', function ($scope, $rootScope, $routeParams, podforumiFabrika) {
+﻿forum.controller('UnutarPodforumaController', function ($scope, $rootScope, $routeParams, podforumiFabrika, $window) {
 
     $scope.nazivPodforuma = $routeParams.nazivPodforuma;
     
@@ -14,5 +14,11 @@
     }
 
     inicijalizacija();
+
+    $scope.otvoriDodavanjeNoveTeme = function () {
+        $window.location.href = '#!/teme/dodajTemu/'+$scope.nazivPodforuma;
+    }
+
+
 
 });

@@ -1,0 +1,56 @@
+﻿<h1>Dodavanje nove teme</h1>
+
+<form method="post">
+    <table>
+
+        <tr>
+            <td>
+                Naslov
+            </td>
+            <td>
+                <input ng-model="tema.naslov" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Tip
+            </td>
+            <td class="dodatno">
+                <select ng-model="tema.tip">
+                    <option value="Tekst">Tekst</option>
+                    <option value="Slika">Slika</option>
+                    <option value="Link">Link</option>
+                </select>
+            </td>
+        </tr>
+        <tr ng-show="tema.tip == 'Tekst'">
+            <td>
+                Tekstualni sadrzaj teme
+            </td>
+            <td >
+                <input type="text" ng-model="tema.sadrzaj" />
+            </td>
+        </tr>
+
+        <tr ng-show="tema.tip == 'Link'">
+            <td>
+                Link
+            </td>
+            <td>
+                <input type="text" ng-model="tema.sadrzaj" />
+            </td>
+        </tr>
+
+        <tr ng-show="tema.tip == 'Slika'">
+            <td>
+                Izaberite sliku
+            </td>
+            <td>
+                <input type="file" />
+            </td>
+        </tr>
+
+    </table>
+    <button ng-click="dodajTemu(tema)">Kreiraj temu</button>
+
+</form>

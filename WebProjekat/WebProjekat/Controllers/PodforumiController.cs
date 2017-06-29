@@ -110,6 +110,8 @@ namespace WebProjekat.Controllers
                     return p;
                 }
             }
+            sr.Close();
+            stream.Close();
             return null;
         }
     }

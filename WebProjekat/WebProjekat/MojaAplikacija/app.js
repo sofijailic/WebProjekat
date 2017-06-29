@@ -25,6 +25,11 @@ forum.config(function ($routeProvider) { // konfiguracija potrebnih stvari koje 
         controller: 'PodforumiController',
         templateUrl: 'MojaAplikacija/stranice/podforumi/dodajPodforum.html'
 
+    }).when('/teme/dodajTemu/:nazivPodforuma', {
+
+        controller: 'TemeController',
+        templateUrl: 'MojaAplikacija/stranice/teme/dodajTemu.html'
+
     }).when('/podforumi/:nazivPodforuma', {
 
         controller: 'UnutarPodforumaController',
