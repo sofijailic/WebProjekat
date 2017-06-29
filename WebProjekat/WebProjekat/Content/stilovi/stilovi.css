@@ -59,8 +59,11 @@ margin-left: 50px;
     width: 500px;
     min-height: 200px;
     max-height:auto;
-    background: #fff;
+    background: limegreen;
     padding:30px;
+}
+.tema{
+    padding:20px;
 }
 .dugmeZaDodavanje {
     margin-left: 100px;

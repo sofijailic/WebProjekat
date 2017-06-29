@@ -1,4 +1,4 @@
-﻿forum.controller('UnutarPodforumaController', function ($scope, $rootScope, $routeParams, podforumiFabrika, $window) {
+﻿forum.controller('UnutarPodforumaController', function ($scope, $rootScope, $routeParams, podforumiFabrika, $window, temeFabrika) {
 
     $scope.nazivPodforuma = $routeParams.nazivPodforuma;
     
@@ -9,6 +9,13 @@
         podforumiFabrika.uzmiPodforumPoNazivu($scope.nazivPodforuma).then(function (odgovor) {
             console.log(odgovor.data);
             $scope.podforum = odgovor.data;
+
+            temeFabrika.uzmiSveTemeZaPodforum($scope.podforum.Naziv).then(function (odgovor) {
+                console.log(odgovor.data);
+
+                $scope.temePodforuma = odgovor.data;
+            });
+
         });
 
     }

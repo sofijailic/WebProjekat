@@ -49,5 +49,44 @@ namespace WebProjekat.Controllers
             return true;
            
         }
+
+        [HttpGet]
+        [ActionName("UzmiSveTemeZaPodforum")]
+        public List<Tema> UzmiSveTemeZaPodforum(string podforum)
+        {
+            List<Tema> listaTema = new List<Tema>();
+            var dataFile = HttpContext.Current.Server.MapPath("~/App_Data/teme.txt");
+            FileStream stream = new FileStream(dataFile, FileMode.Open);
+            StreamReader sr = new StreamReader(stream);;
+            string line = "";
+            while ((line = sr.ReadLine()) != null)
+            {
+                if (line != "")
+                {
+
+                    string[] splitter = line.Split(';');
+                    List<string> listaKomentara = new List<string>();
+
+                    if (splitter[0] == podforum)
+                    {
+                        string[] commentSplitter = splitter[8].Split('|');
+                        foreach (string komentar in commentSplitter)
+                        {
+                            if (komentar != "nePostoje")
+                            {
+                                listaKomentara.Add(komentar);
+                            }
+
+                        }
+
+                        listaTema.Add(new Tema(splitter[0], splitter[1], splitter[2], splitter[3], splitter[4], DateTime.Parse(splitter[5]), Int32.Parse(splitter[6]), Int32.Parse(splitter[7]), listaKomentara));
+                    }
+                }
+
+            }
+            sr.Close();
+            stream.Close();
+            return listaTema;
+        }
     }
 }

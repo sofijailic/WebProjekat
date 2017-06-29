@@ -15,5 +15,9 @@
             NegativniGlasovi: 0
         });
     }
+
+    factory.uzmiSveTemeZaPodforum = function (nazivPodforuma) {
+        return $http.get('/api/Teme/UzmiSveTemeZaPodforum?podforum=' + nazivPodforuma);
+    }
     return factory;
 });

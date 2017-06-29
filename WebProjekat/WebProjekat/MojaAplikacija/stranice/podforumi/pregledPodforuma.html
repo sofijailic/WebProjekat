@@ -1,7 +1,7 @@
 ﻿
 <div class="container-fluid">
     <div class="dugmeZaDodavanje">
-        <button ng-click="otvoriDodavanjeNoveTeme()">Dodaj temu</button>
+        <button ng-click="otvoriDodavanjeNoveTeme()" ng-show="ulogovan">Dodaj temu</button>
     </div>
 </div>
 <div class="container-fluid">
@@ -72,8 +72,12 @@
 
     <div class="levo">
         <h3>Teme</h3>
-        <div class="teme">
-
+        <div class="teme" ng-repeat="tema in temePodforuma">
+            <div class="tema">
+                <h3><a href="#!/podforumi/{{podforum.Naziv}}/{{tema.Naslov}}">{{tema.Naslov}}</a></h3>
+                <p>{{tema.Tip}}</p>
+            </div>
+            
         </div>
     </div>
 </div>
