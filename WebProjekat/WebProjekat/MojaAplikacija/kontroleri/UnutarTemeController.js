@@ -7,6 +7,11 @@
             console.log(odgovor.data);
             $scope.tema = odgovor.data;
 
+            temeFabrika.uzmiKomentareOdTeme().then(function (odgovor) {
+                $scope.komentariTeme = odgovor.data;
+                console.log(odgovor.data);
+            });
+
         });
     }
 

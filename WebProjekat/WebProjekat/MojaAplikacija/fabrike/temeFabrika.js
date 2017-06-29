@@ -24,5 +24,17 @@
         return $http.get('/api/Teme/UzmiTemuPoNaslovu?podforum=' + nazivPodforuma + "&tema=" + naslovTeme);
     }
 
+    factory.uzmiKomentareOdTeme = function (tema) {
+        return $http.get('/api/Komentari/UzmiKomentareOdTeme?idTeme='+tema.PodforumKomePripada+'-'+tema.Naslov);
+    }
+
+    factory.ostaviKomentarNaTemu = function (podforum, naslovTeme, tekstKomentara, autor) {
+        return $http.post('/api/Komentari/DodajKomentarNaTemu', {
+            TemaKojojPripada: podforum + '-' + naslovTeme,
+            Autor: autor,
+            Tekst: tekstKomentara
+        })
+    }
+
     return factory;
 });
