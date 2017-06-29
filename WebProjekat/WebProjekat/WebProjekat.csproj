@@ -214,12 +214,14 @@
     <Content Include="MojaAplikacija\kontroleri\PodforumiController.js" />
     <Content Include="MojaAplikacija\kontroleri\TemeController.js" />
     <Content Include="MojaAplikacija\kontroleri\UnutarPodforumaController.js" />
+    <Content Include="MojaAplikacija\kontroleri\UnutarTemeController.js" />
     <Content Include="MojaAplikacija\stranice\logovanje.html" />
     <Content Include="MojaAplikacija\stranice\podforumi\dodajPodforum.html" />
     <Content Include="MojaAplikacija\stranice\podforumi\podforumi.html" />
     <Content Include="MojaAplikacija\stranice\podforumi\pregledPodforuma.html" />
     <Content Include="MojaAplikacija\stranice\registracija.html" />
     <Content Include="MojaAplikacija\stranice\teme\dodajTemu.html" />
+    <Content Include="MojaAplikacija\stranice\teme\prikazTeme.html" />
     <Content Include="Scripts\js\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\js\ai.0.22.9-build00167.min.js" />
     <Content Include="Scripts\js\angular-route.min.js" />

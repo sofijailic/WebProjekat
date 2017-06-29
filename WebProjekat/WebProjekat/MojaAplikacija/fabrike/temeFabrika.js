@@ -19,5 +19,10 @@
     factory.uzmiSveTemeZaPodforum = function (nazivPodforuma) {
         return $http.get('/api/Teme/UzmiSveTemeZaPodforum?podforum=' + nazivPodforuma);
     }
+
+    factory.uzmiTemuPoNazivu = function (nazivPodforuma, naslovTeme) {
+        return $http.get('/api/Teme/UzmiTemuPoNaslovu?podforum=' + nazivPodforuma + "&tema=" + naslovTeme);
+    }
+
     return factory;
 });

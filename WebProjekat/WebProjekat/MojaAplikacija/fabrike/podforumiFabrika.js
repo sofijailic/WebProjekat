@@ -21,5 +21,7 @@
         return $http.get('/api/Podforumi/UzmiPodforumPoNazivu?naziv=' + nazivPodforuma);
     }
 
+
+
     return factory;
 });

@@ -35,6 +35,11 @@ forum.config(function ($routeProvider) { // konfiguracija potrebnih stvari koje 
         controller: 'UnutarPodforumaController',
         templateUrl: 'MojaAplikacija/stranice/podforumi/pregledPodforuma.html'
 
+    }).when('/podforumi/:nazivPodforuma/:naslovTeme', {
+         
+        controller: 'UnutarTemeController',
+        templateUrl: 'MojaAplikacija/stranice/teme/prikazTeme.html'
+
     })
 
 });
